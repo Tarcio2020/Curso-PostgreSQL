@@ -85,3 +85,14 @@ SELECT nome FROM cliente ORDER BY nome ASC; /*Organiza a tabela em ordem crescec
 SELECT nome FROM cliente ORDER BY nome DESC; /*Organiza a tabela em ordem decrescecente*/
 
 
+/******UPDATE AND DELETE*****/
+
+UPDATE cliente SET nome = 'Teste' Where idcliente = 1; /* Altera o nome para teste do cliente com id 1*/
+
+UPDATE cliente SET nome = 'Adrinano', genero = 'M', numero = '241' Where idcliente = 1; /*Altera o nome genero numero do cliente com id 1*/
+
+INSERT INTO cliente (idcliente, nome) VALUES (16, 'Jãozinho'); /*inseri um cliente apenas com os dados obrigatórios*/
+
+DELETE FROM cliente WHERE idcliente = 1; /*deleta da tabela o cliente com id 1*/
+
+SELECT * FROM cliente; /*seleciona toda a tabela*/
